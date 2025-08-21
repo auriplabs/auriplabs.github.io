@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coming Soon</title>
+  <meta name="description" content="Something new is coming. Stay tuned." />
+  <style>
+    :root {
+      --bg1: #0f172a; /* dark navy */
+      --bg2: #020617; /* almost black */
+      --accent: #38bdf8; /* cyan */
+      --muted: #94a3b8;
+      --text: #f1f5f9;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { height:100%; font-family: system-ui, sans-serif; }
+    body {
+      display:flex; align-items:center; justify-content:center;
+      background: radial-gradient(circle at 30% 20%, rgba(56,189,248,.15), transparent 60%),
+                  radial-gradient(circle at 70% 80%, rgba(124,58,237,.12), transparent 60%),
+                  linear-gradient(to bottom, var(--bg1), var(--bg2));
+      color: var(--text);
+      text-align:center;
+      padding:2rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight:700;
+      line-height:1.1;
+      margin-bottom:1rem;
+      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    p {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: var(--muted);
+      margin-bottom:2rem;
+    }
+    blockquote {
+      font-style: italic;
+      color:#cbd5e1;
+      opacity:.8;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>We’re building something big.</h1>
+    <p>Coming soon.</p>
+    <blockquote>“The future belongs to those who create it.”</blockquote>
+  </main>
+</body>
+</html>
